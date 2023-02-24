@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sono', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?Berlin');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 120%;
+    
+}
+.description {
+    text-transform: capitalize;
+    font-size: 140%;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    height: 60px;
+
+}
+h1.temp {
+    margin: 0 0 0 0;
+}
+.card {
+    background: #1e1d1db6;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    border-style: outset;
+    border-color: rgb(112, 112, 112);
+    color: rgb(255, 255, 255);   
+    /* transition: 500ms;
+    opacity: 1; */
+    
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button {
+    margin: 0.5em;
+    border: none;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    background: #efebeb;
+    /* color: white; */
+    outline: none;
+    /* border-color: black; */
+    /* border: 2px; */
+}
+
+input.searchBar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #efebeb90;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% -50px);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.823);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+svg {
+    margin-top: 3px;
+}
+@media screen and (max-width: 600px) {
+    .card {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        max-width: 300px;
+        margin: 0;
+
+    }
+
+    h2.city, h1.temp, div.description, div.humidity, div.wind {
+        width: 80%;
+        margin: 0;
+        font-size: 110%;
+    }
+
+    h2.city{
+        font-size: 130%;
+        margin-top: 10%;
+    }
+    input.searchBar {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        max-width: 250px;
+        margin: 0;
+
+    }
+
+    h2.city, h1.temp, div.description, div.humidity, div.wind {
+        width: 80%;
+        margin: 0;
+        font-size: 110%;
+    }
+
+    h2.city{
+        font-size: 130%;
+        margin-top: 10%;
+    }
+    input.searchBar {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .card {
+        max-width: 200px;
+        margin: 0;
+
+    }
+
+    h2.city, h1.temp, div.description, div.humidity, div.wind {
+        width: 80%;
+        margin: 0;
+        font-size: 110%;
+    }
+
+    h2.city{
+        font-size: 130%;
+        margin-top: 10%;
+    }
+    input.searchBar {
+        width: 150px;
+    }
+
+    .button{
+        width: 30px;
+        height: 30px;
+    }
+}
+
